@@ -5,7 +5,9 @@
 def find_difference(list_of_numbers):
     list_of_fractional_part = []
     for i in list_of_numbers:
-        list_of_fractional_part.append(i - int(i))
+        #if (i - int(i)) != 0:
+        if (type(i) == float):
+            list_of_fractional_part.append(i - int(i))
     max = list_of_fractional_part[0]
     min = list_of_fractional_part[0]
     for j in range(1, len(list_of_fractional_part)):
