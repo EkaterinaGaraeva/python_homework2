@@ -20,7 +20,8 @@ def find_difference(list_of_numbers):
             min = list_of_fractional_part[k]
     max = round(max, 2)
     min = round(min, 2)
-    print(f'Разница между максимальным значением дробной части {max} и минимальным значением дробной части {min} равна {round((max - min), 2)}')
+    print(f'Разница между максимальным значением дробной части {max} \
+    и минимальным значением дробной части {min} равна {round((max - min), 2)}')
 
 def find_difference2(list_of_numbers):
     max = list_of_numbers[0] - int(list_of_numbers[0])
@@ -33,7 +34,8 @@ def find_difference2(list_of_numbers):
             min = k - int(k)
     max = round(max, 2)
     min = round(min, 2)
-    print(f'Разница между максимальным значением дробной части {max} и минимальным значением дробной части {min} равна {round((max - min), 2)}')
+    print(f'Разница между максимальным значением дробной части {max} \
+    и минимальным значением дробной части {min} равна {round((max - min), 2)}')
 '''
 
 def find_difference3(list_of_numbers):
@@ -47,7 +49,8 @@ def find_difference3(list_of_numbers):
             min = k % 1
     max = round(max, 2)
     min = round(min, 2)
-    print(f'Разница между максимальным значением дробной части {max} и минимальным значением дробной части {min} равна {round((max - min), 2)}')
+    print(f'Разница между максимальным значением дробной части {max} \
+    и минимальным значением дробной части {min} равна {round((max - min), 2)}')
 
 new_list = [1.1, 1.2, 3.1, 5, 10.01]
 #find_difference(new_list)
