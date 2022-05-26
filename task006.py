@@ -25,14 +25,12 @@ def get_random_number(length):
             numbers[i] = 1
     return random_number
     
-
 def bulls_and_cows(rand_number):
     rand_number = str(rand_number)
     guessed_number = ''
     count = 0
-    print(f'Угадайте 4х значное число')
     while (guessed_number != rand_number):
-        # print(f'Угадайте 4х значное число')
+        print(f'Угадайте 4х значное число')
         guessed_number = input()
         while (guessed_number.isnumeric() != True) \
         or (int(guessed_number) > 9999) \
@@ -59,7 +57,6 @@ def bulls_and_cows(rand_number):
         print(f'Коровы = {cow}, быки = {bull}')
     print(f"Вы угадали! Количество попыток - {count}")
 
-
 random_number = get_random_number(4)
-print(random_number)
+#print(random_number)
 bulls_and_cows(random_number)
